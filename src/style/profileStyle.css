@@ -1,0 +1,8 @@
+
+.profile-image {
+    height: 200px;
+    border-radius: 50px 50px 50px 50px; /* Hace la imagen circular */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+    display: block; /* Centra la imagen en su contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+}
