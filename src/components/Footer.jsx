@@ -7,7 +7,7 @@ function Footer(){
                 Made By <a className="aliaxDev" href="https://github.com/AliaxDev">AliaxDev</a> for Cindy 
             </p>
             <p>
-            <span>&nbsp;Withe ❤</span>
+            <span>&nbsp;With ❤</span>
             </p>
         </footer>
     </>
