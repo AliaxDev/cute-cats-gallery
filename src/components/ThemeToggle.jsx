@@ -6,7 +6,7 @@ const ThemeToggle = () => {
     <section className="toggle-container">
       <div className="social-icons">
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/profile.php?id=100009521499248&mibextid=ZbWKwL"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -23,7 +23,7 @@ const ThemeToggle = () => {
           </svg>
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/bll.cindy?igsh=dXNzZXRtdjJ6OTh2"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -42,7 +42,7 @@ const ThemeToggle = () => {
           </svg>
         </a>
         <a
-          href="https://telegram.org"
+          href="https://t.me/CindyBL"
           target="_blank"
           rel="noopener noreferrer"
         >
