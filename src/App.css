@@ -354,7 +354,6 @@ Gallery
   margin: 2rem auto;
   display: grid;
   gap: 2rem;
-  height: 100vh;
 }
 
 .image-container .img {
