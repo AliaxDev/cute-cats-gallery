@@ -1,6 +1,6 @@
 import "../style/profileDescription.css"; // Archivo CSS para estilos
 
-export function Description() {
+function Description() {
   return (
     <div className="profile-description">
       <h2>Hey&nbsp;!&nbsp;✨&nbsp; Que tal&nbsp; !! 😊</h2>
@@ -11,3 +11,5 @@ export function Description() {
     </div>
   );
 }
+
+export default Description;

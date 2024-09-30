@@ -1,5 +1,6 @@
 import { useGlobalContext } from "./Contex";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+
 const ThemeToggle = () => {
   const { isDarkTheme, toggleDarkTheme } = useGlobalContext();
   return (
@@ -12,8 +13,8 @@ const ThemeToggle = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
+            width="30"
+            height="30"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -29,8 +30,8 @@ const ThemeToggle = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
+            width="30"
+            height="30"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -48,8 +49,8 @@ const ThemeToggle = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
+            width="30"
+            height="30"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -60,9 +61,11 @@ const ThemeToggle = () => {
         </a>
       </div>
       <button className="dark-toggle" onClick={toggleDarkTheme}>
-        {isDarkTheme
-          ? <BsFillMoonFill className="toggle-icon" />
-          : <BsFillSunFill className="toggle-icon" />}
+        {isDarkTheme ? (
+          <BsFillMoonFill className="toggle-icon" />
+        ) : (
+          <BsFillSunFill className="toggle-icon" />
+        )}
       </button>
     </section>
   );

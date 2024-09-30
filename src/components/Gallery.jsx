@@ -1,33 +1,35 @@
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
-import { useGlobalContext } from './Contex';
-import CircularColor from './CircularColor';
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import { useGlobalContext } from "./Contex";
+import CircularColor from "./CircularColor";
 
 const url = `${import.meta.env.VITE_API_BASE_URL}${
   import.meta.env.VITE_API_KEY
 }`;
 const Gallery = () => {
-  const search = `${import.meta.env.VITE_API_KEY_WORD}`
+  const search = `${import.meta.env.VITE_API_KEY_WORD}`;
   const { searchTerm } = useGlobalContext();
- 
+
   const response = useQuery({
-    queryKey: ['images', searchTerm],
+    queryKey: ["images", searchTerm],
     queryFn: async () => {
-      const result = await axios.get(`${url}&page=${searchTerm}&query=${search}`);
+      const result = await axios.get(
+        `${url}&page=${searchTerm}&query=${search}`
+      );
       return result.data;
-    },
+    }
   });
 
   if (response.isLoading) {
     return (
-      <section className='image-container'>
+      <section className="image-container">
         <CircularColor />
       </section>
     );
   }
   if (response.isError) {
     return (
-      <section className='image-container'>
+      <section className="image-container">
         <h4>There was an error...</h4>
       </section>
     );
@@ -36,14 +38,14 @@ const Gallery = () => {
   const results = response.data.results;
   if (results.length < 1) {
     return (
-      <section className='image-container'>
+      <section className="image-container">
         <h4>No results found...</h4>
       </section>
     );
   }
 
   return (
-    <section className='image-container'>
+    <section className="image-container">
       {results.map((item) => {
         const url = item?.urls?.regular;
         return (
@@ -51,7 +53,7 @@ const Gallery = () => {
             src={url}
             key={item.id}
             alt={item.alt_description}
-            className='img show'
+            className="img show"
           ></img>
         );
       })}

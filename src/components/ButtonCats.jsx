@@ -2,7 +2,7 @@ import { useGlobalContext } from "./Contex";
 
 const ButtonCats = () => {
   const { setSearchTerm } = useGlobalContext();
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const searchValue = Math.floor(Math.random() * 100) + 1;
     console.log(searchValue);

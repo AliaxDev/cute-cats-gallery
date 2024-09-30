@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "../style/profileStyle.css"; // Asegúrate de crear este archivo para estilos adicionales
 
-export function ProfilePicture() {
+function ProfilePicture() {
   const handleClick = () => {
     // Aquí puedes agregar cualquier lógica adicional si es necesario
   };
@@ -18,3 +18,4 @@ export function ProfilePicture() {
     />
   );
 }
+export default ProfilePicture;
