@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   position: fixed; /* Fija la flecha en la pantalla */
-  bottom: 40px; /* Espaciado desde la parte inferior */
+  bottom: 25px; /* Espaciado desde la parte inferior */
   width: 100%;
 }
 
